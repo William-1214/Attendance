@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出席记录</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">用户管理</a>
+        <a href="attendance.html" class="active">出席记录</a>
+        <a href="summary.html">出席总结</a>
+    </nav>
+    <div class="container">
+        <h2>创建出席表格</h2>
+        <form id="createAttendanceForm">
+            <label for="attendanceDate">出席日期:</label>
+            <input type="date" id="attendanceDate" required><br>
+            <h2>选择出席人员</h2>
+            <div id="userCheckboxes">
+            </div>
+            <button type="submit">保存出席记录</button>
+        </form>
+    </div>
+    <script src="attendance.js"></script>
+</body>
+
+</html>

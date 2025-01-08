@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出席总结</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">用户管理</a>
+        <a href="attendance.html">出席记录</a>
+        <a href="summary.html" class="active">出席总结</a>
+    </nav>
+    <div class="container">
+        <h2>出席总结</h2>
+        <div id="summaryStats">
+            <p>年份平均出席人数: <span id="averageAttendanceYear">0</span></p>
+        </div>
+        <div id="summaryList">
+        </div>
+    </div>
+    <div id="attendanceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h2 id="modalTitle"></h2>
+            <p>当天出席人数: <span id="dailyAttendanceCount">0</span></p>
+            <div class="table-container">
+                <table id="modalTable">
+                    <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>出席</th>
+                        </tr>
+                    </thead>
+                    <tbody id="modalTableBody">
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-buttons">
+                <button id="editAttendanceButton">修改</button>
+                <button id="deleteAttendanceButton">删除</button>
+            </div>
+        </div>
+    </div>
+    <div id="editAttendanceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h2 id="editModalTitle"></h2>
+            <form id="editAttendanceForm">
+                <label for="editNewAttendanceDate">修改出席日期:</label>
+                <input type="date" id="editNewAttendanceDate" required><br>
+                <div id="editUserCheckboxes">
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit">保存修改</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="summary.js"></script>
+</body>
+
+</html>
