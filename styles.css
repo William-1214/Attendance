@@ -200,6 +200,7 @@ th {
 
 .table-container {
     overflow-x: auto;
+    max-height: 50vh;
 }
 
 .close-button {
