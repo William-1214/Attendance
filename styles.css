@@ -1,3 +1,7 @@
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
@@ -88,6 +92,28 @@ form button:hover {
 }
 
 #userCheckboxes div {
+    display: flex;
+    align-items: center;
+}
+
+#editUserCheckboxes {
+    margin-bottom: 15px;
+}
+
+#editUserCheckboxes input[type="checkbox"] {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transform: scale(1.2);
+}
+
+#editUserCheckboxes label {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+#editUserCheckboxes div {
     display: flex;
     align-items: center;
 }
