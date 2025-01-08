@@ -74,6 +74,12 @@ form button:hover {
     background-color: #4cae4c;
 }
 
+.create-button {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
 #userCheckboxes {
     margin-bottom: 15px;
 }
