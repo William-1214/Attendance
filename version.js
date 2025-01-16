@@ -1,3 +1,3 @@
 const version = document.getElementById('version');
 
-version.textContent = 'v1.0.4';
+version.textContent = 'v1.0.5';
