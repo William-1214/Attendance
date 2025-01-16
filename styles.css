@@ -23,14 +23,14 @@ nav {
 
 span {
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin: 0 10px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin: 0 10px;
     border-radius: 5px;
 }
