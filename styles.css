@@ -208,6 +208,11 @@ th {
     overflow-y: auto;
 }
 
+.list-edit-attandance {
+    overflow-x: auto;
+    max-height: 35vh;
+}
+
 .table-container {
     overflow-x: auto;
     max-height: 35vh;
