@@ -265,3 +265,40 @@ th {
         margin: 30% auto;
     }
 }
+
+/* 在现有styles.css的媒体查询内添加 */
+@media screen and (max-width: 480px) {
+  /* 1. 修复导航栏空白 */
+  nav {
+    padding: 5px 0 3px; /* 下边距从10px减到3px */
+    gap: 2px; /* 按钮间距缩小 */
+  }
+
+  nav a {
+    padding: 6px 3px; /* 垂直内边距减小 */
+    margin: 0 2px;
+    line-height: 1.2; /* 行高缩小 */
+  }
+
+  /* 2. 对齐创建按钮 */
+  .create-button button {
+    width: calc(100% - 16px); /* 与输入框同宽 */
+    margin: 0 8px; /* 补偿宽度差 */
+    transform: translateX(-1px); /* 微调对齐 */
+  }
+
+  /* 3. 强化表格边框 */
+  table {
+    border: 1px solid #ddd !important; /* 强制显示外边框 */
+  }
+  
+  th, td {
+    border: 1px solid #ccc !important; /* 深色边框 */
+    position: relative; /* 修复边框覆盖问题 */
+  }
+
+  /* 通用优化补充 */
+  #createUserForm input {
+    width: calc(100% - 18px); /* 对齐按钮宽度 */
+  }
+}
